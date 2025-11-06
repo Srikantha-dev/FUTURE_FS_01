@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Srikanth R.A</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Srikanth R.A</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/myphoto.jpg" alt="Ajay profile picture" />
+      </div>
+      <div class="section__text">
+    
+  <p class="animated-text hello">Hello, I'm</p>
+  <h1 class="animated-text name">Srikanth R.A</h1>
+  <p class="animated-text role">Software Engineer</p>
+
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <a href="#contact" class="btn btn-color-1">Contact Info</a>
+
+        </div>
+        <div id="socials-container">
+          <i class="fa-brands fa-linkedin icon"
+            onclick="location.href='http://linkedin.com/in/srikanth-srikanth-897781378'"></i>
+          
+          <i class="fa-brands fa-github icon"
+            onclick="location.href='https://github.com/Srikantha-dev'"></i>
+          
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="images/myphoto2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fa-solid fa-gears icon"></i>
+              <h3>Experience</h3>
+              <p>Intern at Future Intern<br />Full Stack Development</p>
+            </div>
+            <div class="details-container">
+               <i class="fa-solid fa-graduation-cap icon"></i>
+              <h3>Education</h3>
+              <p>BCA<br />BACHALOR OF COMPUTER APLICATIONS</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A dedicated BCA student in Science and Engineering, specializing in technology and software development, with a strong foundation in Java programming and a keen interest in building robust applications. Skilled in data structures, algorithms, database management, and web development basics, and always expanding knowledge through hands-on projects and coding challenges. Passionate about problem-solving and thriving in collaborative, innovative environments, actively seeking opportunities to apply technical expertise, learn from industry leaders, and contribute to impactful real-world projects
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#experience">
+  <i class="fa-solid fa-chevron-down icon"></i>
+</a>
+
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>CSS</h3>
+                  <p>basics</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>Material UI</h3>
+                  <p>basics</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>Node JS</h3>
+                  <p>basics</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>Mongo DB</h3>
+                  <p>basics</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+        <a href="#skills">
+ <i class="fa-solid fa-chevron-down icon"></i>
+</a>
+
+       </section>
+       <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tolls</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                
+                <div>
+                  <h3>Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>VS Code</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>Eclipes</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>Command Prompt</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+               <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>Net Beans</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check icon"></i>
+                <div>
+                  <h3>Unix</h3>
+                  <p>basics</p>
+                </div>
+              </article>
+            </div>
+          </div>
+       <a href="#project">
+   <i class="fa-solid fa-chevron-down icon"></i>
+</a>
+
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/flight.webp"
+                alt="Airlines management System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Airlines management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Ajaykn-dev/FUTURE_FS_03/tree/main/Ariline%20Managment%20System'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Ajaykn-dev/FUTURE_FS_03/tree/main/Ariline%20Managment%20System'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/portfolio.jpg"
+                alt="Personal Portfolio Website"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Personal Portfolio Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Ajaykn-dev/FUTURE_FS_01'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://fanciful-belekoy-31ea50.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/ecommerce.webp"
+                alt="Mini E -Commerce Webiste"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Mini E-Commerce Webiste</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Ajaykn-dev/FUTURE_FS_02'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://inquisitive-stardust-1f8a93.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#contact">
+   <i class="fa-solid fa-chevron-down icon"></i>
+</a>
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+           <i class="fa-solid fa-envelope icon"></i>
+          
+          <p><a href="mailto:srikanthsrikantha368@gmail.com">srikanthsrikantha368@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-linkedin icon"></i>
+          <p><a href="http://linkedin.com/in/srikanth-srikanth-897781378">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Srikanth R.A All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
